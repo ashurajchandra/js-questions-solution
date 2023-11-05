@@ -1,8 +1,8 @@
 // Highlight the given word from string
 
-const str = "Ultimate JavaScript / FrontEnd Guide";
+const str = "Ultimate JavaScript / FrontEndMasters Guide";
 // const words = ['Front', 'End', 'JavaScript',"End", "Java", "Javas"];
-const words = ["Front","JavaScript", "End","End", "Java", "Javas"];
+const words = ["Front","JavaScript", "End","End", "Java", "Javas", "Masters"];
 
 function highlightWord(str, words){
 
@@ -30,8 +30,8 @@ function highlightWord(str, words){
                      output = `<strong>${prefix}</strong>${suffix}`
                     // output = `<strong>${prefix}${suffix}</strong>`
                 }else if(!uniqueKeywords.has(prefix) && uniqueKeywords.has(suffix)){
-                    output = `${prefix}<strong>${suffix}</strong>`
-                    // output = `<strong> ${prefix}${suffix}</strong>`
+                    // output = `${prefix}<strong>${suffix}</strong>`
+                    output = `<strong> ${prefix}${suffix}</strong>`
                 }
              }
             console.log("output",output)
